@@ -1,0 +1,659 @@
+{% extends 'plantilla.html' %}
+{% load static %}
+{% block title %}Josue Freire - Desarrollador Web Full Stack{% endblock %}
+{% block body_class %}index-page{% endblock %}
+{% block content %}
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+        <img src="{% static 'plantilla/assets/img/img_hero.png' %}" alt="" data-aos="fade-in" class="">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <h2>Josue Freire</h2>
+            <p>Soy <span class="typed"
+                    data-typed-items="Desarrollador Web, Backend Developer, Django Developer, Automatizador">Desarrollador
+                    Web</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
+                    class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Acerca de mí</h2>
+            <p>Desarrollador Web Full Stack con experiencia en la creación de aplicaciones web robustas usando Python y
+                Django.
+                Apasionado por la automatización de procesos, el desarrollo de sistemas a medida y la entrega de
+                soluciones
+                tecnológicas de alta calidad que generan valor real para empresas y clientes.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4 justify-content-center">
+                <div class="col-lg-4">
+                    <img src="{% static 'plantilla/assets/img/my-profile-img.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-8 content">
+                    <h2>Desarrollador Web Full Stack &amp; Automatizador</h2>
+                    <p class="fst-italic py-3">
+                        Especializado en Python, Django y el desarrollo de aplicaciones web completas desde el backend
+                        hasta el frontend. Con experiencia en automatización de procesos, integración de APIs
+                        y diseño de sistemas escalables para el sector empresarial.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>15
+                                        de Agosto
+                                        2002</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>+593 98 467
+                                        6398</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Ambato,
+                                        Ecuador</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>27</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Título:</strong> <span>Ingeniería en
+                                        Sistemas de Información</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                    <span>estevezjosue047@gmail.com</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="py-3">
+                        Me enfoco en construir soluciones web eficientes y escalables, desde APIs RESTful hasta
+                        aplicaciones completas con Django. Tengo experiencia en automatización con Python, integración
+                        de sistemas y desarrollo colaborativo en equipo. Disfruto aprender constantemente y aplicar
+                        nuevas tecnologías para resolver problemas reales.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="stats section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"
+                            class="purecounter"></span>
+                        <p><strong>Clientes Satisfechos</strong> <span>proyectos entregados</span></p>
+                    </div>
+                </div> 
+
+    <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1"
+                class="purecounter"></span>
+            <p><strong>Proyectos</strong> <span>completados con éxito</span></p>
+        </div>
+    </div> 
+
+    <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+            <i class="bi bi-headset"></i>
+            <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1"
+                class="purecounter"></span>
+            <p><strong>Horas de Código</strong> <span>dedicadas al desarrollo</span></p>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+            <i class="bi bi-people"></i>
+            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                class="purecounter"></span>
+            <p><strong>Años de Experiencia</strong> <span>en desarrollo web</span></p>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Habilidades</h2>
+            <p>Tecnologías y herramientas que domino para construir aplicaciones web modernas y robustas</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row skills-content skills-animation">
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill"><span>Python</span> <i class="val">92%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>Django / DRF</span> <i class="val">90%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>HTML / CSS / Bootstrap</span> <i class="val">85%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>SQL / PostgreSQL</span> <i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                    <div class="progress">
+                        <span class="skill"><span>Git / Docker / Linux</span> <i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div><!-- End Skills Item -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Currículum</h2>
+            <p>Mi trayectoria profesional y académica en el desarrollo de software,
+                con enfoque en tecnologías web modernas y automatización de procesos empresariales.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="resume-title">Resumen</h3>
+
+                    <div class="resume-item pb-0">
+                        <h4>Josue Freire</h4>
+                        <p><em>Desarrollador Web Full Stack con más de 4 años de experiencia construyendo aplicaciones
+                                web con Python y Django, desde sistemas de gestión empresarial hasta herramientas
+                                de automatización y APIs REST.</em></p>
+                        <ul>
+                            <li>Ambato, Ecuador</li>
+                            <li>+593 98 467 6398</li>
+                            <li>estevezjosue047@gmail.com</li>
+                        </ul>
+                    </div><!-- Fin Resume Item -->
+
+                    <h3 class="resume-title">Educación</h3>
+                    <div class="resume-item">
+                        <h4>Ingeniería en Sistemas de Información</h4>
+                        <h5>2018 - 2023</h5>
+                        <p><em>Universidad Técnica de Cotopaxi, Latacunga, Ecuador</em></p>
+                        <p>Formación integral en desarrollo de software, bases de datos, redes y sistemas distribuidos.
+                            Proyecto de titulación enfocado en automatización de procesos con Python y Django.</p>
+                    </div><!-- Fin Resume Item -->
+
+                    <div class="resume-item">
+                        <h4>Certificaciones Profesionales</h4>
+                        <h5>2022 - 2024</h5>
+                        <p><em>Platzi / Udemy / Coursera</em></p>
+                        <p>Django REST Framework, Docker, PostgreSQL avanzado, Celery &amp; Redis,
+                            CI/CD con GitHub Actions, y desarrollo de APIs escalables.</p>
+                    </div><!-- Fin Resume Item -->
+
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="resume-title">Experiencia Profesional</h3>
+                    <div class="resume-item">
+                        <h4>Desarrollador Web Full Stack</h4>
+                        <h5>2022 - Presente</h5>
+                        <p><em>Freelance / Proyectos Independientes, Ecuador</em></p>
+                        <ul>
+                            <li>Desarrollo de sistemas de gestión empresarial (contratos, pagos, amortizaciones)
+                                con Django y PostgreSQL.</li>
+                            <li>Implementación de robots de automatización con Python, Selenium y Celery para
+                                consultas en portales del gobierno ecuatoriano (SRI, Judicatura).</li>
+                            <li>Diseño e integración de APIs REST con Django REST Framework para aplicaciones
+                                web y móviles.</li>
+                            <li>Despliegue de aplicaciones en servidores VPS (Hostinger) con Nginx, Gunicorn y Docker.
+                            </li>
+                        </ul>
+                    </div><!-- Fin Resume Item -->
+
+                    <div class="resume-item">
+                        <h4>Desarrollador Web Junior</h4>
+                        <h5>2020 - 2022</h5>
+                        <p><em>Empresas locales / Prácticas profesionales, Ambato</em></p>
+                        <ul>
+                            <li>Desarrollo y mantenimiento de sitios web institucionales con HTML, CSS y JavaScript.
+                            </li>
+                            <li>Apoyo en la migración y administración de bases de datos MySQL y PostgreSQL.</li>
+                            <li>Elaboración de reportes y dashboards con Python para visualización de datos.</li>
+                            <li>Colaboración en equipo bajo metodología ágil (Scrum) con control de versiones Git.</li>
+                        </ul>
+                    </div><!-- Fin Resume Item -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Portafolio</h2>
+            <p>Una selección de proyectos recientes en los que he trabajado, incluyendo plataformas web completas,
+                herramientas de automatización de procesos mediante scraping y desarrollo de APIs escalables.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                    <li data-filter="*" class="filter-active">Todos</li>
+                    <li data-filter=".filter-app">Aplicaciones Web</li>
+                    <li data-filter=".filter-product">Automatización</li>
+                    <li data-filter=".filter-branding">APIs & Backend</li>
+                    <li data-filter=".filter-books">Otros</li>
+                </ul> -->
+
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                        <div class="portfolio-content h-100">
+                            <img src="{% static 'plantilla/assets/img/portfolio/app-1.png' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Sitio web para dentistas</h4>
+                                <p>Sitio web para un negocio de un dentista </p>
+                                <a href="{% static 'plantilla/assets/img/portfolio/app-1.png' %}"
+                                    title="Sitio web para dentistas" data-gallery="portfolio-gallery-app"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="{% url 'portfolio_details' 'dentistas' %}" title="Más Detalles"
+                                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                        <div class="portfolio-content h-100">
+                            <img src="{% static 'plantilla/assets/img/portfolio/app-2.png' %}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Sitio web para diseño de casas</h4>
+                                <p>Sitio web para un negocio de diseño de casas</p>
+                                <a href="{% static 'plantilla/assets/img/portfolio/app-2.png' %}"
+                                    title="Sitio web para diseño de casas" data-gallery="portfolio-gallery-product"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="{% url 'portfolio_details' 'casas' %}" title="Más Detalles"
+                                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End Portfolio Item -->
+
+
+                </div><!-- End Portfolio Container -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Servicios Profesionales</h2>
+            <p>Aporto soluciones tecnológicas a medida enfocadas en la eficiencia corporativa, la experiencia de usuario
+                y la seguridad de los datos. Desde la idea hasta el despliegue en producción.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+                    <div>
+                        <h4 class="title"><a href="/service-details/" class="stretched-link">Desarrollo Web Full
+                                Stack</a></h4>
+                        <p class="description">Construcción de aplicaciones web completas a medida usando Django, HTML5,
+                            CSS3, y JavaScript, enfocadas en la escalabilidad y el rendimiento.</p>
+                    </div>
+                </div>
+                <!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                    <div>
+                        <h4 class="title"><a href="/service-details/" class="stretched-link">Desarrollo de APIs REST</a>
+                        </h4>
+                        <p class="description">Diseño e integración de APIs seguras mediante Django REST Framework (DRF)
+                            preparadas para conectar con aplicaciones móviles y microservicios.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                    <div>
+                        <h4 class="title"><a href="/service-details/" class="stretched-link">Automatización (RPA)</a>
+                        </h4>
+                        <p class="description">Creación de scripts con Python y Selenium para extracción de datos (web
+                            scraping), reduciendo el trabajo manual repetitivo considerablemente.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                    <div>
+                        <h4 class="title"><a href="/service-details/" class="stretched-link">Diseño de Base de Datos</a>
+                        </h4>
+                        <p class="description">Modelado avanzado, optimización de consultas SQL y migración de datos
+                            para PostgreSQL y MySQL garantizando la integridad referencial.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                    <div>
+                        <h4 class="title"><a href="/service-details/" class="stretched-link">Despliegue y VPS</a></h4>
+                        <p class="description">Configuración de servidores Linux (Hostinger, AWS), despliegue con
+                            Gunicorn/Nginx, Dockerización y mantenimiento de entorno en producción.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+                    <div>
+                        <h4 class="title"><a href="/service-details/" class="stretched-link">Mantenimiento y
+                                Refactorización</a></h4>
+                        <p class="description">Auditoría de código, corrección de bugs, modernización de sistemas
+                            legados de Django y optimización del tiempo de carga.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <!--<section id="testimonials" class="testimonials section light-background">
+
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Testimonios</h2>
+            <p>Lo que dicen mis clientes y colaboradores sobre nuestro trabajo en conjunto</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Josue desarrolló nuestro sistema de gestión de contratos en tiempo récord.
+                                    La aplicación es intuitiva, rápida y nos ha ahorrado horas de trabajo manual.
+                                    Altamente recomendado por su profesionalismo y calidad técnica.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'plantilla/assets/img/testimonials/testimonials-1.jpg' %}"
+                                class="testimonial-img" alt="">
+                            <h3>Carlos Mendoza</h3>
+                            <h4>Gerente General, Constructora Ecuabuild</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Implementó la automatización de consultas al SRI que antes nos tomaba días.
+                                    Ahora el proceso corre solo en minutos. Un desarrollador muy comprometido
+                                    y con excelente comunicación durante todo el proyecto.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'plantilla/assets/img/testimonials/testimonials-2.jpg' %}"
+                                class="testimonial-img" alt="">
+                            <h3>Ana Rodríguez</h3>
+                            <h4>Directora Financiera, Grupo Inmobiliario Ugsha</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Trabajé con Josue en el módulo de pagos y amortizaciones de nuestra plataforma.
+                                    Tiene un dominio impresionante de Django y se preocupa genuinamente por entregar
+                                    un producto de calidad. Lo contrataria nuevamente sin dudas.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'plantilla/assets/img/testimonials/testimonials-3.jpg' %}"
+                                class="testimonial-img" alt="">
+                            <h3>Miguel Arias</h3>
+                            <h4>CTO, Fintech Ecuador</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Entregó nuestro portal web institucional antes del plazo acordado y con
+                                    más funcionalidades de las que esperábamos. Josue es un profesional serio,
+                                    detallista y siempre dispuesto a escuchar las necesidades del cliente.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'plantilla/assets/img/testimonials/testimonials-4.jpg' %}"
+                                class="testimonial-img" alt="">
+                            <h3>Paola Torres</h3>
+                            <h4>Directora, ONG Ayuda Digital EC</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Josue integró nuestra API con sistemas externos de manera impecable.
+                                    Su conocimiento técnico es sólido y su capacidad de resolver problemas complejos
+                                    de forma elegante lo distingue de otros desarrolladores.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <img src="{% static 'plantilla/assets/img/testimonials/testimonials-5.jpg' %}"
+                                class="testimonial-img" alt="">
+                            <h3>Rodrigo Espinoza</h3>
+                            <h4>Fundador, StartupEC</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente? Conversemos y hagámoslo realidad</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-5">
+
+                    <div class="info-wrap">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>Ambato, Tungurahua, Ecuador</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Llámame</h3>
+                                <p>+593 98 467 6398</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Escríbeme</h3>
+                                <p>estevezjosue047@gmail.com</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.564756598375!2d-78.6272!3d-1.2417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38198f7e2a4a3%3A0x897a67f0f6222b10!2sAmbato%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                            frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <label for="name-field" class="pb-2">Tu Nombre</label>
+                                <input type="text" name="name" id="name-field" class="form-control" required="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email-field" class="pb-2">Tu Email</label>
+                                <input type="email" class="form-control" name="email" id="email-field" required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="subject-field" class="pb-2">Asunto</label>
+                                <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="message-field" class="pb-2">Mensaje</label>
+                                <textarea class="form-control" name="message" rows="10" id="message-field"
+                                    required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Cargando...</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">¡Tu mensaje fue enviado. Gracias!</div>
+
+                                <button type="submit">Enviar Mensaje</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div><!-- End Contact Form -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Contact Section -->
+
+</main>
+{% endblock %}

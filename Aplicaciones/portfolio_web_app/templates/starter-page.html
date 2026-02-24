@@ -1,0 +1,38 @@
+{% extends 'plantilla.html' %}
+{% load static %}
+{% block title %}Página Inicial - Mi Portafolio{% endblock %}
+{% block body_class %}starter-page-page{% endblock %}
+{% block content %}
+<main class="main">
+
+    <!-- Título de Página -->
+    <div class="page-title dark-background">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+            <h1 class="mb-2 mb-lg-0">Página Inicial</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">Inicio</a></li>
+                    <li class="current">Página Inicial</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- Fin Título de Página -->
+
+    <!-- Sección de Inicio -->
+    <section id="starter-section" class="starter-section section">
+
+        <!-- Título de Sección -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Sección de Inicio</h2>
+            <p>Utiliza esta página como punto de partida para tus páginas personalizadas</p>
+        </div><!-- Fin Título de Sección -->
+
+        <div class="container" data-aos="fade-up">
+            <p>Usa esta página como plantilla base para crear tus propias páginas personalizadas dentro del portafolio.
+            </p>
+        </div>
+
+    </section><!-- /Sección de Inicio -->
+
+</main>
+{% endblock %}

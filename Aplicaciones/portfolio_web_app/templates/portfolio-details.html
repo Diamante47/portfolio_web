@@ -1,0 +1,86 @@
+{% extends 'plantilla.html' %}
+{% load static %}
+{% block title %}Detalles del Portafolio - Mi Portafolio{% endblock %}
+{% block body_class %}portfolio-details-page{% endblock %}
+{% block content %}
+<main class="main">
+
+    <!-- Título de Página -->
+    <div class="page-title dark-background">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+            <h1 class="mb-2 mb-lg-0">Detalles del Proyecto</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">Inicio</a></li>
+                    <li class="current">Detalles del Proyecto</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- Fin Título de Página -->
+
+    <!-- Sección Detalles del Portafolio -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper init-swiper">
+
+                        <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+                        <div class="swiper-wrapper align-items-center">
+
+                            {% for img in imagenes %}
+                            <div class="swiper-slide">
+                                <img src="{% static 'plantilla/assets/img/portfolio/'|add:img %}" alt="">
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Información del Proyecto</h3>
+                        <ul>
+                            <li><strong>Categoría</strong>: {{ categoria }}</li>
+                            <li><strong>Cliente</strong>: {{ cliente }}</li>
+                            <li><strong>Fecha del proyecto</strong>: {{ fecha }}</li>
+                            <li><strong>URL del proyecto</strong>: <a href="http://{{ url }}" target="_blank">{{ url
+                                    }}</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                        <h2>{{ titulo }}</h2>
+                        <p>
+                            {{ descripcion_larga }}
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Sección Detalles del Portafolio -->
+
+</main>
+{% endblock %}

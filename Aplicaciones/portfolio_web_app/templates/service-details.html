@@ -1,0 +1,83 @@
+{% extends 'plantilla.html' %}
+{% load static %}
+{% block title %}Detalles del Servicio - Mi Portafolio{% endblock %}
+{% block body_class %}service-details-page{% endblock %}
+{% block content %}
+<main class="main">
+
+    <!-- Título de Página -->
+    <div class="page-title dark-background">
+        <div class="container d-lg-flex justify-content-between align-items-center">
+            <h1 class="mb-2 mb-lg-0">Detalles del Servicio</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">Inicio</a></li>
+                    <li class="current">Detalles del Servicio</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- Fin Título de Página -->
+
+    <!-- Sección Detalles del Servicio -->
+    <section id="service-details" class="service-details section">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="services-list">
+                        <a href="#" class="active">Diseño Web</a>
+                        <a href="#">Desarrollo de Software</a>
+                        <a href="#">Gestión de Proyectos</a>
+                        <a href="#">Diseño Gráfico</a>
+                        <a href="#">Marketing</a>
+                    </div>
+
+                    <h4>¿Qué es lo que hacemos en este dominio?</h4>
+                    <p>La cantidad de quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non
+                        occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maximi modi
+                        rerum.</p>
+                </div>
+
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="{% static 'plantilla/assets/img/services.jpg' %}" alt="" class="img-fluid services-img">
+                    <h3>Soluciones profesionales adaptadas a tus necesidades y objetivos empresariales</h3>
+                    <p>
+                        Nuestros servicios están diseñados para ofrecer resultados de alta calidad. Trabajamos con
+                        dedicación
+                        y profesionalismo para superar las expectativas de cada cliente. Nuestro equipo de expertos
+                        garantiza
+                        entregas puntuales y soluciones innovadoras que impulsan el crecimiento de tu negocio.
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span>Desarrollo de proyectos a medida con tecnologías
+                                modernas.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Asesoramiento estratégico personalizado para cada
+                                cliente.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>Soporte continuo y mantenimiento post-entrega del
+                                proyecto.</span></li>
+                    </ul>
+                    <p>
+                        Nuestras soluciones se adaptan a las necesidades específicas de cada cliente, garantizando
+                        resultados
+                        óptimos en plazos razonables y con la más alta calidad en cada entrega.
+                    </p>
+                    <p>
+                        Contamos con un equipo versátil de profesionales que abarca todas las áreas del desarrollo
+                        digital,
+                        desde el diseño conceptual hasta la implementación técnica y el marketing digital. Nuestra
+                        metodología
+                        de trabajo ágil nos permite responder rápidamente a los cambios del mercado y adaptarnos a las
+                        nuevas necesidades de nuestros clientes de manera eficiente.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Sección Detalles del Servicio -->
+
+</main>
+{% endblock %}
